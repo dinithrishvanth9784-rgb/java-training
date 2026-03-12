@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class SimpleInterestCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input: Principal, Rate, Time
+        int P = sc.nextInt();  // Principal
+        int R = sc.nextInt();  // Rate of Interest
+        int T = sc.nextInt();  // Time in years
+
+        // Calculate Simple Interest
+        int SI = (P * R * T) / 100;
+
+        // Output
+        System.out.println(SI);
+
+        sc.close();
+    }
+}
